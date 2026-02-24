@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 /**
- * Representa uma função que acieta uma argumento do tipo T e retorna um valor booleano (verdadeiro ou falso).
+ * Representa uma função que aceita uma argumento do tipo T e retorna um valor booleano (verdadeiro ou falso).
  * É comumente usada para filtrar os elementos do Stream com base em alguma condição.
  */
 public class PredicateExample {
@@ -11,7 +11,7 @@ public class PredicateExample {
         //Crie uma lista de palavras
         List<String> palavras = Arrays.asList("java", "kotlin", "python","javascript", "c", "go", "ruby");
 
-        //Criar um predicate que verifica se a plavra tem mais de 5 caracteres
+        //Criar um predicate que verifica se a palavra tem mais de 5 caracteres
         Predicate<String> maisDeCincoCaracteres = palavra -> palavra.length() > 5;
 
         //Usar o Stream para filtrar as palavras com mais de 5 caracteres e, em seguida,
